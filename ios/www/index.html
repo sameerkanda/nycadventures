@@ -7,16 +7,24 @@
 	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="/ios/www/js/index.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<link type="text/css" href="/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
 	<img src="/logo.png" width="300" style="margin:10px;" />
-	<hr />
-	<div ng-show="!name" style="text-align:center;">
+	<hr style="margin-bottom:0px;" />
+	<div ng-show="!name && !showmap" style="text-align:center;">
 		<img src="http://www.snehta.com/assets/icon_facebookLogin-1e61253d9c26f08babdf1d729156e765.png" ng-click="facebook_login()">
 	</div>
-	<div ng-show="name">
-
+	<div ng-show="name && !showmap">
+		<h3 style="padding:10px;text-align:center;font-weight:bold;margin-top:0px;">Let's discover</h3>
+		<div ng-repeat="(id, loc) in objs" style="margin-bottom:20px; text-align:center;">
+			<img ng-src="/s{{id}}.png" width="200" ng-click="discover(loc.lat, loc.lng)" />
+		</div>
+	</div>
+	<div ng-show="showmap">
+		<h3>First: Let's get to the location</h3>
+		<div id="map-canvas" style="height:300px;"></div>
 	</div>
 </body>
 </html>

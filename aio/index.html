@@ -76,10 +76,10 @@
 
 	<div ng-show="step == 2">
 		<div style="width:75%;float:left;" class="categories">
-			<div style="clear:both;width:75%;" lat="40.755483" lng="-73.979167" name="4">
+			<div style="clear:both;width:75%;"  lat="42.001568" lng="-70.986536" name="1">
 				<table style="width:100%">
 					<tr>
-						<td><img style="width:200px;" src="/s1.png" lat="42.001568" lng="-70.986536" name="1" /></td>
+						<td><img style="width:200px;" src="/s1.png" /></td>
 						<td style="width:100%">
 							<h3 style="margin-top:0px;">John Watts</h3>
 							He was the son of John Watts (1715–1789) and Ann (DeLancey) Watts (d. 1784). He completed preparatory studies and studied law. He was the last Recorder of New York City under the English Crown, appointed in 1774.
@@ -94,10 +94,10 @@
 					</tr>
 				</table>
 			</div>
-			<div style="clear:both;width:75%;" lat="40.755483" lng="-73.979167" name="4">
+			<div style="clear:both;width:75%;" lat="40.704519" lng="-74.014126" name="2">
 				<table style="width:100%">
 					<tr>
-						<td><img style="width:200px;" src="/s2.png"  lat="40.704519" lng="-74.014126" name="2" /></td>
+						<td><img style="width:200px;" src="/s2.png"   /></td>
 						<td style="width:100%">
 							<h3 style="margin-top:0px;">Charging Bull</h3>
 							Charging Bull, which is sometimes referred to as the Wall Street Bull or the Bowling Green Bull, is a 3,200-kilogram (7,100 lb) bronze sculpture by Arturo Di Modica that stands in Bowling Green Park near Wall Street in Manhattan, New York City. Standing 11 feet (3.4 m) tall[1] and measuring 16 feet (4.9 m) long,[2] the oversize sculpture depicts a bull, the symbol of aggressive financial optimism and prosperity, leaning back on its haunches and with its head lowered as if ready to charge. The sculpture is both a popular tourist destination which draws thousands of people a day, as well as "one of the most iconic images of New York"[3] and a "Wall Street icon"[4] symbolizing "Wall Street" and the Financial District.
@@ -107,10 +107,10 @@
 					</tr>
 				</table>
 			</div>
-			<div style="clear:both;width:75%;" lat="40.755483" lng="-73.979167" name="4">
+			<div style="clear:both;width:75%;" lat="40.706983" lng="-74.01052" name="3" >
 				<table style="width:100%">
 					<tr>
-						<td><img style="width:200px;" src="/s3.png"  lat="40.706983" lng="-74.01052" name="3" /></td>
+						<td><img style="width:200px;" src="/s3.png"  /></td>
 						<td style="width:100%">
 							<h3 style="margin-top:0px;">Federal Hall</h3>
 							Federal Hall, built in 1700 as New York's City Hall, later served as the first capitol building of the United States of America under the Constitution, and was the site of George Washington's inauguration as the first President of the United States. It was also where the United States Bill of Rights was introduced in the First Congress. The building was demolished in 1812.
@@ -142,7 +142,7 @@
 
 			<hr>
 
-			<img ng-repeat="(fb_id, name) in users" ng-src="https://graph.facebook.com/{{fb_id}}/picture" ng-click="set_active_user(fb_id)" />
+			<img ng-repeat="(fb_id, name) in users" ng-src="https://graph.facebook.com/{{fb_id}}/picture" style="width:100px;" ng-click="set_active_user(fb_id)" />
 		</div>
 	</div>
 </body>
