@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73377b6c-68e4-42ff-8d51-b9ee8417c12d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook_callback.php" afterPath="$PROJECT_DIR$/facebook_callback.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aio/index.html" afterPath="$PROJECT_DIR$/aio/index.html" />
+    <list default="true" id="73377b6c-68e4-42ff-8d51-b9ee8417c12d" name="Default" comment="updatessss">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/www/index.html" afterPath="$PROJECT_DIR$/ios/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/www/js/index.js" afterPath="$PROJECT_DIR$/ios/www/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nycadventures.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380408782992" ignored="false" />
+    <file path="/Dummy.txt" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380409269589" ignored="false" />
     <file path="/hello.php" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380382523203" ignored="false" />
     <file path="/.htaccess" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380382563144" ignored="false" />
     <file path="/index.html" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380408716957" ignored="false" />
@@ -21,6 +17,7 @@
     <file path="/parseConfig.php" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380394611307" ignored="false" />
     <file path="/dummy.txt" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380405834464" ignored="false" />
     <file path="/a.dummy" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380408411477" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="73377b6c-68e4-42ff-8d51-b9ee8417c12d" time="1380409268969" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aio/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="121" selection-start="9924" selection-end="9924" vertical-scroll-proportion="0.82185274">
+            <state line="144" column="121" selection-start="9924" selection-end="9924" vertical-scroll-proportion="-14.122449">
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -87,10 +84,30 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aio/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="51" selection-start="1741" selection-end="1761" vertical-scroll-proportion="-15.6">
+            <state line="43" column="76" selection-start="1608" selection-end="1608" vertical-scroll-proportion="-16.8">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-ui.custom.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jquery-ui.custom.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="1664" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-3.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="30" selection-start="64190" selection-end="64190" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,16 +121,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ios/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="43" selection-start="1447" selection-end="1447" vertical-scroll-proportion="-16.25">
+            <state line="15" column="49" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.25951558">
               <folding>
                 <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#hr#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,10 +186,10 @@
         <option value="$PROJECT_DIR$/aio/art/index.html" />
         <option value="$PROJECT_DIR$/aio/style.css" />
         <option value="$PROJECT_DIR$/aio/index.js" />
-        <option value="$PROJECT_DIR$/ios/www/index.html" />
         <option value="$PROJECT_DIR$/facebook_callback.php" />
         <option value="$PROJECT_DIR$/ios/www/js/index.js" />
         <option value="$PROJECT_DIR$/aio/index.html" />
+        <option value="$PROJECT_DIR$/ios/www/index.html" />
       </list>
     </option>
   </component>
@@ -414,13 +432,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19340" selection-start="83500" selection-end="83501" vertical-scroll-proportion="0.08417509">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ios/www/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="41" selection-start="64201" selection-end="64201" vertical-scroll-proportion="0.05050505">
@@ -489,38 +500,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="1447" selection-end="1447" vertical-scroll-proportion="-16.25">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook_callback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="168" selection-start="224" selection-end="224" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aio/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="51" selection-start="1741" selection-end="1761" vertical-scroll-proportion="-15.6">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aio/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="121" selection-start="9924" selection-end="9924" vertical-scroll-proportion="0.82185274">
+        <state line="144" column="121" selection-start="9924" selection-end="9924" vertical-scroll-proportion="-14.122449">
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -556,6 +538,52 @@
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aio/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="76" selection-start="1608" selection-end="1608" vertical-scroll-proportion="-16.8">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-ui.custom.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1664" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-3.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="30" selection-start="64190" selection-end="64190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook_callback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="168" selection-start="224" selection-end="224" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="49" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.25951558">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
