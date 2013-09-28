@@ -1,18 +1,116 @@
-<html>
+<html ng-app="app">
 <head>
+	<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
 	<script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="http://code.angularjs.org/1.0.8/angular-sanitize.min.js"></script>
+	<script src="/aio/index.js"></script>
+	<script src="/jquery.js"></script>
+	<link type="text/css" href="/bootstrap.css" rel="stylesheet" />
+	<link type="text/css" href="/aio/style.css" rel="stylesheet" />
 </head>
-<body>
+<body style="margin:0px;padding:0px;" ng-controller="appController">
+<div style="height:100px;background-color:green;">LOGO</div>
 
-<script>
-	Parse.initialize("CapTJvjAtrMgMZuLqkPfzw71qO2vgzyeaUcJPU2c", "E8Kykz4Rq59hdS2IF4Fa3RYlVL2r68S3iFWjgIgD");
-	var TestObject = Parse.Object.extend("TestObject");
-	var testObject = new TestObject();
-	testObject.save({foo: "bar"}, {
-		success: function(object) {
-			alert("yay! it worked");
-		}
-	});
-</script>
+<nav class="navbar navbar-default" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Brand</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li><a href="#">Separated link</a></li>
+					<li><a href="#">One more separated link</a></li>
+				</ul>
+			</li>
+		</ul>
+		<form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Link</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- /.navbar-collapse -->
+</nav>
+
+	<div ng-show="step == 1">
+		<div>
+			<div class="slider" style="text-align:center;">
+				<input type="radio" name="slide_switch" id="id1"/>
+				<label for="id1">
+					<img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg" width="100"/>
+				</label>
+				<img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg" ng-click="step2('art');" />
+
+				<!--Lets show the second image by default on page load-->
+				<input type="radio" name="slide_switch" id="id2" checked="checked"/>
+				<label for="id2">
+					<img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" width="100"/>
+				</label>
+				<img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg"/>
+
+				<input type="radio" name="slide_switch" id="id3"/>
+				<label for="id3">
+					<img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
+				</label>
+				<img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+
+				<input type="radio" name="slide_switch" id="id4"/>
+				<label for="id4">
+					<img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+				</label>
+				<img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+			</div>
+		</div>
+	</div>
+
+	<div ng-show="step == 2">
+		<div style="width:66%;float:left;">
+			<div style="width:100px;height:100px;float:left;margin:20px;">ART 1</div>
+			<div style="width:100px;height:100px;float:left;margin:20px;">ART 2</div>
+			<div style="width:100px;height:100px;float:left;margin:20px;">ART 3</div>
+			<div style="width:100px;height:100px;float:left;margin:20px;">ART 4</div>
+			<div style="width:100px;height:100px;float:left;margin:20px;">ART 5</div>
+			<div style="width:100px;height:100px;float:left;margin:20px;">ART 6</div>
+			<div>ART 7</div>
+			<div>ART 8</div>
+			<div>ART 9</div>
+		</div>
+		<div style="width:33%;float:left;">
+			<div>{{users[active_user]}}</div>
+
+			<div><img src="/aio/iphone.png" /></div>
+
+			<img ng-repeat="(fb_id, name) in users" ng-src="https://graph.facebook.com/{{fb_id}}/picture" ng-click="set_active_user(fb_id)" />
+		</div>
+	</div>
 </body>
 </html>
