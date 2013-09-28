@@ -6,12 +6,11 @@
 	<script type="text/javascript" charset="utf-8" src="http://code.angularjs.org/1.0.8/angular-sanitize.min.js"></script>
 	<script src="/aio/index.js"></script>
 	<script src="/jquery.js"></script>
+	<script src="/jquery-ui.custom.min.js"></script>
 	<link type="text/css" href="/bootstrap.css" rel="stylesheet" />
 	<link type="text/css" href="/aio/style.css" rel="stylesheet" />
 </head>
 <body style="margin:0px;padding:0px;" ng-controller="appController">
-<div style="height:100px;background-color:green;">LOGO</div>
-
 <nav class="navbar navbar-default" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
@@ -21,93 +20,127 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#">Brand</a>
+		<img src="/logo.png" style="height:45px;padding:5px;margin-right:15px;" />
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Link</a></li>
-			<li><a href="#">Link</a></li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li><a href="#">Separated link</a></li>
-					<li><a href="#">One more separated link</a></li>
-				</ul>
-			</li>
-		</ul>
-		<form class="navbar-form navbar-left" role="search">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
-			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
-		</form>
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#">Link</a></li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li><a href="#">Separated link</a></li>
-				</ul>
-			</li>
+			<li class="active"><a href="#">Browse</a></li>
+			<li><a href="#">About</a></li>
 		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>
 
 	<div ng-show="step == 1">
+		<h2 style="width:1024px; margin:auto;">What do you want to discover?</h2>
 		<div>
 			<div class="slider" style="text-align:center;">
-				<input type="radio" name="slide_switch" id="id1"/>
+				<input type="radio" name="slide_switch" id="id1" checked="checked"/>
 				<label for="id1">
-					<img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg" width="100"/>
+					<img src="/aio/images/art.jpg" width="170"/>
+					<div style="font-size:24px">Art</div>
 				</label>
-				<img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg" ng-click="step2('art');" />
+				<img src="/aio/images/art.jpg" width="1024" height="600" />
 
 				<!--Lets show the second image by default on page load-->
-				<input type="radio" name="slide_switch" id="id2" checked="checked"/>
+				<input type="radio" name="slide_switch" id="id2"/>
 				<label for="id2">
-					<img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" width="100"/>
+					<img src="/aio/images/statues.jpg" width="170"/>
+					<div style="font-size:24px">Statues</div>
 				</label>
-				<img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg"/>
+				<img src="/aio/images/statues.jpg" width="1024" height="600" ng-click="step2('statue');" />
 
 				<input type="radio" name="slide_switch" id="id3"/>
 				<label for="id3">
-					<img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
+					<img src="/aio/images/museum.png" width="170"/>
+					<div style="font-size:24px">Museums</div>
 				</label>
-				<img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+				<img src="/aio/images/museum.png" width="1024" height="600" />
 
 				<input type="radio" name="slide_switch" id="id4"/>
 				<label for="id4">
-					<img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+					<img src="/aio/images/music.png" width="170"/>
+					<div style="font-size:24px">Music</div>
 				</label>
-				<img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+				<img src="/aio/images/music.png" width="1024" height="600" />
+
+				<input type="radio" name="slide_switch" id="id5"/>
+				<label for="id4">
+					<img src="http://b.dryicons.com/images/icon_sets/luna_grey_icons/png/128x128/add.png" style="padding:15px;" width="113"/>
+				</label>
+				<img src="http://b.dryicons.com/images/icon_sets/luna_grey_icons/png/128x128/add.png" width="1024" height="600" />
 			</div>
 		</div>
 	</div>
 
 	<div ng-show="step == 2">
-		<div style="width:66%;float:left;">
-			<div style="width:100px;height:100px;float:left;margin:20px;">ART 1</div>
-			<div style="width:100px;height:100px;float:left;margin:20px;">ART 2</div>
-			<div style="width:100px;height:100px;float:left;margin:20px;">ART 3</div>
-			<div style="width:100px;height:100px;float:left;margin:20px;">ART 4</div>
-			<div style="width:100px;height:100px;float:left;margin:20px;">ART 5</div>
-			<div style="width:100px;height:100px;float:left;margin:20px;">ART 6</div>
-			<div>ART 7</div>
-			<div>ART 8</div>
-			<div>ART 9</div>
+		<div style="width:75%;float:left;" class="categories">
+			<div style="clear:both;width:75%;" lat="40.755483" lng="-73.979167" name="4">
+				<table style="width:100%">
+					<tr>
+						<td><img style="width:200px;" src="/s1.png" lat="42.001568" lng="-70.986536" name="1" /></td>
+						<td style="width:100%">
+							<h3 style="margin-top:0px;">John Watts</h3>
+							He was the son of John Watts (1715–1789) and Ann (DeLancey) Watts (d. 1784). He completed preparatory studies and studied law. He was the last Recorder of New York City under the English Crown, appointed in 1774.
+							Watts was a member of the New York State Assembly from 1791 to 1793, serving as Speaker during these three terms. He was a member of the commission to build Newgate Prison in New York City (1796–1799).
+							Watts was elected as a Federalist to the 3rd United States Congress, and served from March 4, 1793, to March 3, 1795. He was defeated in his run for re-election by Edward Livingston.
+							He was a judge of Westchester County, New York from 1802 to 1807.
+							Watts married his cousin Jane DeLancey, and their only son was Robert J. Watts to whom John G. Leake, a distant wealthy relative who died childless, left his extensive properties. Robert inherited Leake's personal property (the real estate was escheated to the State because of technical problems of the "will") but died very soon. The grieving father then founded and endowed the Leake and Watts Orphan House with the Leake inheritance.
+							John Watts died in New York City and was laid to rest in a vault in Trinity Churchyard.
+							He was the grandfather of Philip Kearny, who was interred in Watts's vault until being removed to Arlington National Cemetery.
+							Archibald Kennedy, 11th Earl of Cassilis was Watts's brother-in-law, and Archibald Kennedy, 1st Marquess of Ailsa was Watt's nephew.
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div style="clear:both;width:75%;" lat="40.755483" lng="-73.979167" name="4">
+				<table style="width:100%">
+					<tr>
+						<td><img style="width:200px;" src="/s2.png"  lat="40.704519" lng="-74.014126" name="2" /></td>
+						<td style="width:100%">
+							<h3 style="margin-top:0px;">Charging Bull</h3>
+							Charging Bull, which is sometimes referred to as the Wall Street Bull or the Bowling Green Bull, is a 3,200-kilogram (7,100 lb) bronze sculpture by Arturo Di Modica that stands in Bowling Green Park near Wall Street in Manhattan, New York City. Standing 11 feet (3.4 m) tall[1] and measuring 16 feet (4.9 m) long,[2] the oversize sculpture depicts a bull, the symbol of aggressive financial optimism and prosperity, leaning back on its haunches and with its head lowered as if ready to charge. The sculpture is both a popular tourist destination which draws thousands of people a day, as well as "one of the most iconic images of New York"[3] and a "Wall Street icon"[4] symbolizing "Wall Street" and the Financial District.
+							In Outdoor Monuments of Manhattan: A Historical Guide, Dianne Durante describes the sculpture:
+							The Bull's head is lowered, its nostrils flare, and its wickedly long, sharp horns are ready to gore; it's an angry, dangerous beast. The muscular body twists to one side, and the tail is curved like a lash: the Bull is also energetic and in motion.[5]
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div style="clear:both;width:75%;" lat="40.755483" lng="-73.979167" name="4">
+				<table style="width:100%">
+					<tr>
+						<td><img style="width:200px;" src="/s3.png"  lat="40.706983" lng="-74.01052" name="3" /></td>
+						<td style="width:100%">
+							<h3 style="margin-top:0px;">Federal Hall</h3>
+							Federal Hall, built in 1700 as New York's City Hall, later served as the first capitol building of the United States of America under the Constitution, and was the site of George Washington's inauguration as the first President of the United States. It was also where the United States Bill of Rights was introduced in the First Congress. The building was demolished in 1812.
+							Federal Hall National Memorial on Wall Street was built in 1842 as the United States Custom House, on the site of the old Federal Hall, and later served as a sub-Treasury building. It is now operated by the National Park Service as a museum commemorating the historic events that occurred there.
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div style="clear:both;width:75%;" lat="40.755483" lng="-73.979167" name="4">
+				<table style="width:100%">
+					<tr>
+						<td><img style="width:200px;" src="/s4.png" /></td>
+						<td style="width:100%">
+							<h3 style="margin-top:0px;">Benjamin Franklin</h3>
+							Benjamin Franklin (January 17, 1706 [O.S. January 6, 1705][Note 1][Note 2] – April 17, 1790) was one of the Founding Fathers of the United States. A noted polymath, Franklin was a leading author, printer, political theorist, politician, postmaster, scientist, musician, inventor, satirist, civic activist, statesman, and diplomat. As a scientist, he was a major figure in the American Enlightenment and the history of physics for his discoveries and theories regarding electricity. He invented the lightning rod, bifocals, the Franklin stove, a carriage odometer, and the glass 'armonica'.[1] He facilitated many civic organizations, including a fire department and a university.
+							Franklin earned the title of "The First American" for his early and indefatigable campaigning for colonial unity; as an author and spokesman in London for several colonies, then as the first United States Ambassador to France, he exemplified the emerging American nation.[2] Franklin was foundational in defining the American ethos as a marriage of the practical values of thrift, hard work, education, community spirit, self-governing institutions, and opposition to authoritarianism both political and religious, with the scientific and tolerant values of the Enlightenment. In the words of historian Henry Steele Commager, "In a Franklin could be merged the virtues of Puritanism without its defects, the illumination of the Enlightenment without its heat."[3] To Walter Isaacson, this makes Franklin "the most accomplished American of his age and the most influential in inventing the type of society America would become."[4]
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
-		<div style="width:33%;float:left;">
+		<div style="width:25%;float:left;">
 			<div>{{users[active_user]}}</div>
 
-			<div><img src="/aio/iphone.png" /></div>
+			<div style="position:relative;">
+				<img style="height:400px;" src="/aio/iphone.png" />
+				<img ng-src="https://graph.facebook.com/{{active_user}}/picture" style="position:absolute;top:0px;left:0px;" ng-show="active_user" />
+			</div>
+
+			<hr>
 
 			<img ng-repeat="(fb_id, name) in users" ng-src="https://graph.facebook.com/{{fb_id}}/picture" ng-click="set_active_user(fb_id)" />
 		</div>

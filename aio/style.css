@@ -1,9 +1,14 @@
+body {font-size:20px;}
+
+table, tr, td {vertical-align:top}
+td {padding:10px;}
+
 /*Time for the CSS*/
 .slider{
-	width: 640px; /*Same as width of the large image*/
+	width: 1024px; /*Same as width of the large image*/
 	position: relative;
 	/*Instead of height we will use padding*/
-	padding-top: 320px; /*That helps bring the labels down*/
+	padding-top: 600px; /*That helps bring the labels down*/
 
 	margin: 10px auto;
 

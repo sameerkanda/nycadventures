@@ -32,6 +32,21 @@ app.run(function($rootScope, $location, $http) {
 	if($location.search().name) {
 		$rootScope.name = $location.search().name.replace(/\+/g, ' ')
 		$rootScope.picture = $location.search().picture.replace(/\+/g, ' ')
+
+		setInterval(function() {
+			var query = new Parse.Query(Parse.Object.extend("user"));
+			query.find({
+				success: function(gameScore) {
+					for(var i in gameScore) {
+						if(!$rootScope.users[gameScore[i].get('fb_id')])
+							$rootScope.users[gameScore[i].get('fb_id')] = gameScore[i].get('name')
+
+						if(!$rootScope.$$phase)
+							$rootScope.$apply();
+					}
+				}
+			});
+		}, 500)
 	}
 
 	$rootScope.facebook_login = function() {

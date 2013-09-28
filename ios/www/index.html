@@ -10,12 +10,13 @@
 	<link type="text/css" href="/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-<div style="height:50px;background-color:green;" ng-controller="appController">LOGO</div>
-	<div ng-click="facebook_login()" ng-show="!name">
-		FACEBOOK LOGIN
+	<img src="/logo.png" width="300" style="margin:10px;" />
+	<hr />
+	<div ng-show="!name" style="text-align:center;">
+		<img src="http://www.snehta.com/assets/icon_facebookLogin-1e61253d9c26f08babdf1d729156e765.png" ng-click="facebook_login()">
 	</div>
 	<div ng-show="name">
-		<img ng-src="{{picture}}" />
+
 	</div>
 </body>
 </html>
